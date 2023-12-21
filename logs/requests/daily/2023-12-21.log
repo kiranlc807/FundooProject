@@ -1,0 +1,6 @@
+info: ::1 - - [21/Dec/2023:06:50:20 +0000] "POST /api/v1/user/signup HTTP/1.1" 400 43 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [21/Dec/2023:06:50:27 +0000] "POST /api/v1/user/signup HTTP/1.1" 201 238 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [21/Dec/2023:06:50:48 +0000] "POST /api/v1/user/login HTTP/1.1" 201 97 "-" "PostmanRuntime/7.36.0"
+

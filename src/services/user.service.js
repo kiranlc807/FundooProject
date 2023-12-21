@@ -14,3 +14,17 @@ export const registerUser = async (body) => {
     return data;
   }
 };
+
+export const login = async (body)=>{
+  const data = await User.findOne({
+    email:body.email
+  })
+  if(!data){
+    throw new Error("user not found")
+  }
+  if(data.password!==body.password)
+  {
+    throw new Error("Password not match")
+  }
+ return data;
+}

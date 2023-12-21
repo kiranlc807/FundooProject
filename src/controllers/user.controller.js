@@ -25,7 +25,8 @@ export const login = async (req, res) => {
       code: HttpStatus.CREATED,
       data:{ 
         name:data.name, 
-        emial:data.email},
+        emial:data.email
+      },
       message: 'User log in successful'
     });
   } catch (error) {

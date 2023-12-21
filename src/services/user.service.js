@@ -1,5 +1,6 @@
 import { StatusCodes } from "http-status-codes";
 import User from "../models/user.model";
+const bcrypt = require('bcrypt');
 
 
 export const registerUser = async (body) => {
@@ -9,10 +10,13 @@ export const registerUser = async (body) => {
   if(data1){
     throw StatusCodes.BAD_REQUEST
   }
-  else{
-    const data = User.create(body)
+  else{ 
+    const saltRounds = 10
+    body.password= await bcrypt.hash(body.password, saltRounds)
+    const data = await User.create(body); 
     return data;
   }
+  
 };
 
 export const login = async (body)=>{
@@ -22,7 +26,9 @@ export const login = async (body)=>{
   if(!data){
     throw new Error("user not found")
   }
-  if(data.password!==body.password)
+  const hasedPassword = data.password;
+  const result = await bcrypt.compare(body.password,hasedPassword)
+  if(!result)
   {
     throw new Error("Password not match")
   }

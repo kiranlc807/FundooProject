@@ -1,13 +1,13 @@
 import * as UserService from "../services/user.service";
 import HttpStatus from "http-status-codes"
 
-
+const secretKey = "Kirana@4"
 export const newUser = async (req, res) =>{
     try{
     const data = await UserService.registerUser(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
-      data: data,
+      data:data,
       message: 'User created successfully'
     });
     }catch(error){
@@ -23,10 +23,7 @@ export const login = async (req, res) => {
     const data = await UserService.login(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
-      data:{ 
-        name:data.name, 
-        emial:data.email
-      },
+      data:data,
       message: 'User log in successful'
     });
   } catch (error) {

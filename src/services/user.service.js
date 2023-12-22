@@ -1,20 +1,21 @@
-import { StatusCodes } from "http-status-codes";
 import User from "../models/user.model";
 const bcrypt = require('bcrypt');
+import jwt from 'jsonwebtoken';
 
 
+const secretKey = "Kirana@4455"
 export const registerUser = async (body) => {
   const data1 = await User.findOne({
     email:body.email
   })
   if(data1){
-    throw StatusCodes.BAD_REQUEST
+    throw new Error('user already exist')
   }
   else{ 
     const saltRounds = 10
     body.password= await bcrypt.hash(body.password, saltRounds)
     const data = await User.create(body); 
-    return data;
+    return data
   }
   
 };
@@ -30,7 +31,7 @@ export const login = async (body)=>{
   const result = await bcrypt.compare(body.password,hasedPassword)
   if(!result)
   {
-    throw new Error("Password not match")
+    throw new Error("Incorrect Password")
   }
- return data;
+ return jwt.sign({email:data.email},secretKey);
 }

@@ -33,5 +33,5 @@ export const login = async (body)=>{
   {
     throw new Error("Incorrect Password")
   }
- return jwt.sign({email:data.email},secretKey);
+ return jwt.sign({userId:data._id},secretKey);
 }

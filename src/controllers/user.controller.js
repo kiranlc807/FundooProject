@@ -1,7 +1,6 @@
 import * as UserService from "../services/user.service";
 import HttpStatus from "http-status-codes"
 
-const secretKey = "Kirana@4"
 export const newUser = async (req, res) =>{
     try{
     const data = await UserService.registerUser(req.body);

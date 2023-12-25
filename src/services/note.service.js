@@ -25,7 +25,9 @@ export const createNote = async (body,userId) => {
         throw new Error('User not found');
       }
       else{
-      const notes = await Note.find();
+      const notes = await Note.find({
+        userId:userId
+      });
       if(!notes){
         throw new Error('No Note Found')
       }

@@ -76,19 +76,6 @@ export const createNote = async (req, res) => {
     }
   };
 
-  export const unArchiveNote = async (req, res) => {
-    try {
-      const noteId = req.params.noteId;
-      const userId = req.user.userId;
-      const updatedNote = await NoteService.unArchiveNote(noteId, userId);
-      res.status(HttpStatus.OK).json(updatedNote);
-    } catch (error) {
-      res.status(HttpStatus.INTERNAL_SERVER_ERROR).json({
-         error: error.message
-      });
-    }
-  };
-
   export const trashNote = async (req, res) => {
     try {
       const noteId = req.params.noteId;

@@ -37,11 +37,8 @@ export const userAuth= (req, res, next) => {
   }
 
   try {
-    // Verify the token
-    const decoded = jwt.verify(token, 'Kirana@4455');
-
-    // Attach user information to the request
-    req.user = decoded;
+    // verifing and Attach user information to the request
+    req.user = jwt.verify(token,process.env.SECRET_KEY);
 
     // Proceed to the next middleware or route handler
     next();

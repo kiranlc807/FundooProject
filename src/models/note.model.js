@@ -17,6 +17,20 @@ const noteSchema = new Schema({
     ref: 'users',
     required :true
   },
-});
+//
+  archived: {
+    type: Boolean,
+    default: false,
+  },
+  trashed: {
+    type: Boolean,
+    default: false,
+  },
+//
+  },
+  {
+  timestamps: true
+  }
+);
 
 export default model('Note', noteSchema);

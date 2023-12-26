@@ -12,5 +12,7 @@ router.get('',noteController.getAllNotes);
 router.get('/:_id',noteController.getNoteById);
 router.put('/:_id',noteController.updateNote);
 router.delete('/:_id',noteController.deleteNote);
+router.put('/:noteId/archive', noteController.archiveNote);
+router.put('/:noteId/trash', noteController.trashNote);
 
 export default router

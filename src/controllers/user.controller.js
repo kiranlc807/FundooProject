@@ -33,3 +33,14 @@ export const login = async (req, res) => {
     
   } 
 };
+
+export const requestResetToken = async (req, res) => {
+  try {
+    const user = await UserService.requestResetToken(req.body.email);
+    res.status(200).json({
+      message: `Reset token sent to user email ${user.email}` 
+    });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};

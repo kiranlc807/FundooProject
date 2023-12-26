@@ -76,6 +76,18 @@ export const createNote = async (body,userId) => {
       return updatedNote;
   };
 
+  export const unArchiveNote = async (noteId, userId) => {
+    const updatedNote = await Note.findOneAndUpdate(
+      { _id: noteId, userId },
+      { $set: { archived: false } },
+      { new: true }
+    );
+    if (!updatedNote) {
+      throw new Error('Note not found');
+    }
+    return updatedNote;
+  };
+
   export const trashNote = async (noteId, userId) => {
       const updatedNote = await Note.findOneAndUpdate(
         { _id: noteId, userId },

@@ -1,6 +1,7 @@
 import User from "../models/user.model";
 const bcrypt = require('bcrypt');
 import jwt from 'jsonwebtoken';
+import * as emailService from '../utils/user.util'
 
 
 const secretKey = "Kirana@4455"
@@ -35,3 +36,21 @@ export const login = async (body)=>{
   }
  return jwt.sign({userId:data._id},secretKey);
 }
+
+export const requestResetToken = async (username) => {
+    const user = await User.findOne({
+      email:username
+    });
+
+    if (!user) {
+      throw new Error('User not found');
+    }
+
+    const resetToken = jwt.sign({ userId: user.email }, process.env.SECRET_KEY, {
+      expiresIn: '1h',
+    });
+
+    await emailService.sendResetToken(user.email, resetToken);
+
+    return user
+};

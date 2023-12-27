@@ -1,7 +1,6 @@
 import * as UserService from "../services/user.service";
 import HttpStatus from "http-status-codes"
 
-const secretKey = "Kirana@4"
 export const newUser = async (req, res) =>{
     try{
     const data = await UserService.registerUser(req.body);
@@ -33,4 +32,15 @@ export const login = async (req, res) => {
     });
     
   } 
+};
+
+export const requestResetToken = async (req, res) => {
+  try {
+    const user = await UserService.requestResetToken(req.body.email);
+    res.status(200).json({
+      message: `Reset token sent to user email ${user.email}` 
+    });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
 };

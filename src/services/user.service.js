@@ -1,10 +1,10 @@
 import User from "../models/user.model";
-const bcrypt = require('bcrypt');
+import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import * as emailService from '../utils/user.util'
 
 
-const secretKey = "Kirana@4455"
+
 export const registerUser = async (body) => {
   const data1 = await User.findOne({
     email:body.email
@@ -30,11 +30,12 @@ export const login = async (body)=>{
   }
   const hasedPassword = data.password;
   const result = await bcrypt.compare(body.password,hasedPassword)
+  console.log(result);
   if(!result)
   {
     throw new Error("Incorrect Password")
   }
- return jwt.sign({userId:data._id},secretKey);
+ return jwt.sign({userId:data._id},LOGIN_SECRET_KEY);
 }
 
 export const requestResetToken = async (username) => {
@@ -46,11 +47,28 @@ export const requestResetToken = async (username) => {
       throw new Error('User not found');
     }
 
-    const resetToken = jwt.sign({ userId: user.email }, process.env.SECRET_KEY, {
+    const resetToken = jwt.sign({ userId: user._id }, process.env.RESET_SECRET_KEY, {
       expiresIn: '1h',
     });
-
+    // console.log(resetToken);
     await emailService.sendResetToken(user.email, resetToken);
 
     return user
+};
+
+export const resetPassword = async (userId, newPassword) => {
+  try {
+    const user = await User.findById(userId);
+
+    if (!user) {
+      throw new Error('User not found');
+    }
+    // Update the user's password with the new hashed password
+    const hashedPassword = await bcrypt.hash(newPassword, 10);
+    user.password = hashedPassword;
+
+    return 'Password reset successfully';
+  } catch (error) {
+    throw error;
+  }
 };

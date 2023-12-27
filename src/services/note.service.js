@@ -33,7 +33,7 @@ export const createNote = async (body,userId) => {
       }
       return notes;
       }
-
+      
   };
 
   export const getNoteById = async (noteId) => {
@@ -78,16 +78,16 @@ export const createNote = async (body,userId) => {
       return updatedNote;   
   };
 
-
-
   export const trashNote = async (noteId, userId) => {
+    const existingNote = await Note.findOne({_id:noteId,userId})
+      if(!existingNote)
+      {
+        throw new Error('Note Not Found!')
+      }
       const updatedNote = await Note.findOneAndUpdate(
         { _id: noteId, userId },
-        { $set: { trashed: true } },
+        { $set: { trashed: !existingNote.trashed } },
         { new: true }
       );
-      if (!updatedNote) {
-        throw new Error('Note not found');
-      }
       return updatedNote;
   };

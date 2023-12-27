@@ -37,10 +37,25 @@ export const login = async (req, res) => {
 export const requestResetToken = async (req, res) => {
   try {
     const user = await UserService.requestResetToken(req.body.email);
-    res.status(200).json({
+    res.status(HttpStatus.OK).json({
       message: `Reset token sent to user email ${user.email}` 
     });
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(HttpStatus.BAD_REQUEST).json({ 
+      error: error.message 
+    });
+  }
+};
+
+export const resetPassword = async (req, res) => {
+  try {
+    const result = await UserService.resetPassword(req.user.userId, req.body.newPassword);
+    res.status(HttpStatus.OK).json({ 
+      message: result 
+    });
+  } catch (error) {
+    res.status(HttpStatus.BAD_REQUEST).json({
+      error: error.message 
+    });
   }
 };

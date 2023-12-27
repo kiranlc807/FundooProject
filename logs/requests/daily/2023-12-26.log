@@ -254,3 +254,31 @@ info: ::1 - - [26/Dec/2023:11:28:34 +0000] "PUT /api/v1/note/658aa03662d00bad2c1
 
 info: ::1 - - [26/Dec/2023:11:28:35 +0000] "PUT /api/v1/note/658aa03662d00bad2c1eb643/archive HTTP/1.1" 200 255 "-" "PostmanRuntime/7.36.0"
 
+info: ::1 - - [26/Dec/2023:16:07:33 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 200 66 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:08:36 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 400 32 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:10:51 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 400 26 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:13:18 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" - - "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:14:46 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" - - "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:18:55 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" - - "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:20:25 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 200 66 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:21:20 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 200 66 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:22:55 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 400 32 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:24:19 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 200 66 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:25:33 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 400 32 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:25:49 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 400 32 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:28:18 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 400 31 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [26/Dec/2023:16:29:21 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 200 41 "-" "PostmanRuntime/7.36.0"
+

@@ -30,8 +30,6 @@ import jwt from 'jsonwebtoken';
 export const userAuth= (req, res, next) => {
   // Get the token from the authorization header
   const token = req.header('Authorization');
-
-  // Check if token is present
   if (!token) {
     return res.status(401).json({ error: 'Access denied. No token provided.' });
   }

@@ -68,3 +68,7 @@ info: ::1 - - [27/Dec/2023:06:26:35 +0000] "PUT /api/v1/user/resetpassword HTTP/
 
 info: ::1 - - [27/Dec/2023:06:26:41 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 200 41 "-" "PostmanRuntime/7.36.0"
 
+info: ::1 - - [27/Dec/2023:10:38:29 +0000] "PUT /api/v1/user/forgotpassword HTTP/1.1" 200 66 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [27/Dec/2023:10:39:18 +0000] "PUT /api/v1/user/resetpassword HTTP/1.1" 200 41 "-" "PostmanRuntime/7.36.0"
+

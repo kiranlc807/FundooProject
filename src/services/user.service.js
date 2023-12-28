@@ -30,12 +30,11 @@ export const login = async (body)=>{
   }
   const hasedPassword = data.password;
   const result = await bcrypt.compare(body.password,hasedPassword)
-  console.log(result);
   if(!result)
   {
     throw new Error("Incorrect Password")
   }
- return jwt.sign({userId:data._id},LOGIN_SECRET_KEY);
+  return jwt.sign({userId:data._id},process.env.LOGIN_SECRET_KEY);
 }
 
 export const requestResetToken = async (username) => {
@@ -50,7 +49,6 @@ export const requestResetToken = async (username) => {
     const resetToken = jwt.sign({ userId: user._id }, process.env.RESET_SECRET_KEY, {
       expiresIn: '1h',
     });
-    // console.log(resetToken);
     await emailService.sendResetToken(user.email, resetToken);
 
     return user

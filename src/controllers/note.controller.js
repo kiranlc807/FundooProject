@@ -25,7 +25,7 @@ export const createNote = async (req, res) => {
 
   export const getNoteById = async (req, res) => {
     try {
-      const note = await NoteService.getNoteById(req.params);
+      const note = await NoteService.getNoteById(req.params,req.user.userId);
       res.status(HttpStatus.OK).json(note);
     } catch (error) {
       res.status(HttpStatus.NO_CONTENT).json({ 

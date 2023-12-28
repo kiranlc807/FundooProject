@@ -36,8 +36,8 @@ export const createNote = async (body,userId) => {
       
   };
 
-  export const getNoteById = async (noteId) => {
-      const note = await Note.findOne({ _id: noteId});
+  export const getNoteById = async (noteId,userId) => {
+      const note = await Note.findOne({ _id: noteId,userId});
       if (!note) {
         throw new Error('Note not found');
       }

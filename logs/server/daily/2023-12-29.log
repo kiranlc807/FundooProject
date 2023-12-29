@@ -1,0 +1,48 @@
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T04:21:51.943Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T04:21:51.959Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T06:00:24.127Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T06:00:24.146Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:08:25.764Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:08:25.784Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:10:05.044Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:10:05.059Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token } in JSON at position 35
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:89:19)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/user/forgotpassword 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2023-12-29T14:10:29.859Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:12:17.235Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:12:17.252Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:12:35.525Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:12:35.544Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:13:40.738Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:13:40.756Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:13:51.245Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:13:51.263Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:14:00.995Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:14:01.011Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:14:42.303Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:14:42.316Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:15:12.135Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:15:12.151Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:15:19.936Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:15:19.951Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:16:08.233Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:16:08.252Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:16:44.218Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:16:44.234Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2023-12-29T14:17:10.172Z"}
+info: Connected to the database. {"timestamp":"2023-12-29T14:17:10.189Z"}

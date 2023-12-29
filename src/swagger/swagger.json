@@ -1,0 +1,578 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "FundooNote API",
+      "version": "1.0.0",
+      "description": "API documentation for your Node.js application"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/v1/",
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "securityDefinitions": {
+      "BearerAuth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header",
+        "description": "Enter Bearer token"
+      }
+    },
+    "components": {
+      "schemas": {
+        "User": {
+          "type": "object",
+          "required": ["name","email", "password"],
+          "properties": {
+            "name":{
+                "type":"string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "password": {
+              "type": "string"
+            }
+          }
+        },
+        "Note": {
+          "type": "object",
+          "required": ["title", "description"],
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "color": {
+              "type": "string"
+            }
+          }
+        },
+        "ErrorResponse": {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer",
+          "bearerFormat": "JWT"
+        }
+      }
+    },
+    "paths": {
+      "/api/v1/user/signup": {
+        "post": {
+          "summary": "Register a new user",
+          "tags": ["Authentication"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "User registered successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "username": "testuser"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/user/login": {
+        "post": {
+          "summary": "Login and get authentication token",
+          "tags": ["Authentication"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "User logged in successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "token": "your-auth-token"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "Invalid username or password",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Invalid credentials"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/user/forgotpassword": {
+        "put": {
+          "summary": "get authentication token",
+          "tags": ["Authentication"],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Reset token sent to user email",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "token": "your-auth-token"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User Not Found",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Invalid credentials"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/user/resetpassword": {
+        "put": {
+          "summary": "Pass the new Password and token",
+          "tags": ["Authentication"],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Reset token sent to user email",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "token": "your-auth-token"
+                  }
+                }
+              }
+            },
+            "401": {
+              "description": "User Not Found",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Invalid credentials"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/note": {
+        "post": {
+          "summary": "Create a new note",
+          "tags": ["Note"],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Note"
+                }
+              }
+            }
+          },
+          "responses": {
+            "201": {
+              "description": "Note created successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "title": "Test Note"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "get": {
+          "summary": "Get all notes",
+          "tags": ["Note"],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Notes retrieved successfully",
+              "content": {
+                "application/json": {
+                  "example": [
+                    {
+                      "title": "Test Note 1"
+                    },
+                    {
+                      "title": "Test Note 2"
+                    }
+                  ]
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/api/v1/note/{noteId}": {
+        "get": {
+          "summary": "Get a note by ID",
+          "tags": ["Note"],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "noteId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Note retrieved successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "title": "Test Note"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "error": "Internal Server Error"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "put": {
+          "summary": "Update an existing note",
+          "tags": ["Note"],
+          "security": [
+            {
+              "BearerAuth": []
+            }
+          ],
+          "parameters": [
+            {
+              "name": "noteId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Note"
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Note updated successfully",
+              "content": {
+                "application/json": {
+                  "example": {
+                    "title": "Updated Note"
+                  }
+                }
+              }
+            },
+            "500": {
+              "description": "Internal Server Error",
+              "content": {
+                "application/json": {
+                    "example": {
+                        "error": "Internal Server Error"
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "delete": {
+              "summary": "Delete a note by ID",
+              "tags": ["Note"],
+              "security": [
+                {
+                  "BearerAuth": []
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "noteId",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "204": {
+                  "description": "Note deleted successfully"
+                },
+                "404": {
+                  "description": "Note not found",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Note not found"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Internal Server Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/v1/note/{noteId}/archive": {
+            "put": {
+              "summary": "Archive a note by ID",
+              "tags": ["Note"],
+              "security": [
+                {
+                  "BearerAuth": []
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "noteId",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Note archived successfully",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "title": "Archived Note"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Note not found",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Note not found"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Internal Server Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "/api/v1/note/{noteId}/trash": {
+            "put": {
+              "summary": "Move a note to trash by ID",
+              "tags": ["Note"],
+              "security": [
+                {
+                  "BearerAuth": []
+                }
+              ],
+              "parameters": [
+                {
+                  "name": "noteId",
+                  "in": "path",
+                  "required": true,
+                  "schema": {
+                    "type": "string"
+                  }
+                }
+              ],
+              "responses": {
+                "200": {
+                  "description": "Note moved to trash successfully",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "title": "Trashed Note"
+                      }
+                    }
+                  }
+                },
+                "404": {
+                  "description": "Note not found",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Note not found"
+                      }
+                    }
+                  }
+                },
+                "500": {
+                  "description": "Internal Server Error",
+                  "content": {
+                    "application/json": {
+                      "example": {
+                        "error": "Internal Server Error"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+  

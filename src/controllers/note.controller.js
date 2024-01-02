@@ -36,7 +36,7 @@ export const createNote = async (req, res) => {
 
   export const updateNote = async (req, res) => {
     try {
-      const updatedNote = await NoteService.updateNote(req.params,req.body);
+      const updatedNote = await NoteService.updateNote(req.params,req.body,req.user.userId);
       res.status(HttpStatus.OK).json({
         data: updatedNote,
         message:'Updated Succesfully'
@@ -51,7 +51,7 @@ export const createNote = async (req, res) => {
 
   export const deleteNote = async (req, res) => {
     try {
-      const deletedNote = await NoteService.deleteNote(req.params);
+      const deletedNote = await NoteService.deleteNote(req.params._id,req.user.userId);
       res.status(HttpStatus.OK).json({
         data:deletedNote,
         message:'Deleted succesfully'

@@ -108,3 +108,39 @@ info: ::1 - - [02/Jan/2024:06:58:43 +0000] "GET /api/v1/note/658d1f40830364939c5
 
 info: ::1 - - [02/Jan/2024:06:58:46 +0000] "GET /api/v1/note/658d1f40830364939c5a19f0 HTTP/1.1" 200 252 "-" "PostmanRuntime/7.36.0"
 
+info: ::1 - - [02/Jan/2024:08:29:44 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:31:41 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:32:34 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:38:02 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:41:58 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:56:04 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:56:48 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:56:55 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:08:57:59 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:09:23:30 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:09:31:31 +0000] "GET /api/v1/note HTTP/1.1" 200 1523 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:09:31:36 +0000] "GET /api/v1/note HTTP/1.1" 200 1523 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:09:37:17 +0000] "GET /api/v1/note HTTP/1.1" 200 1523 "-" "PostmanRuntime/7.36.0"
+
+info: ::1 - - [02/Jan/2024:09:42:48 +0000] "POST /api/v1/cart/62158a0505253301a4fda5db HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [02/Jan/2024:09:43:00 +0000] "POST /api/v1/cart/62158a0505253301a4fda5db HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [02/Jan/2024:09:43:16 +0000] "POST /api/v1/cart/62158a0505253301a4fda5db HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [02/Jan/2024:09:45:07 +0000] "POST /api/v1/cart/6215898705253301a4fda5d6 HTTP/1.1" 404 47 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+
+info: ::1 - - [02/Jan/2024:10:34:28 +0000] "POST /api/v1/user/login HTTP/1.1" 201 210 "-" "PostmanRuntime/7.36.0"
+

@@ -2,6 +2,7 @@ import User from "../models/user.model";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import * as emailService from '../utils/user.util'
+import { sendemail } from "../utils/sendrabbitmq";
 
 
 
@@ -25,6 +26,7 @@ export const login = async (body)=>{
   const data = await User.findOne({
     email:body.email
   })
+  const email = body.email;
   if(!data){
     throw new Error("user not found")
   }
@@ -34,6 +36,7 @@ export const login = async (body)=>{
   {
     throw new Error("Incorrect Password")
   }
+  sendemail(email);
   return jwt.sign({userId:data._id},process.env.LOGIN_SECRET_KEY);
 }
 

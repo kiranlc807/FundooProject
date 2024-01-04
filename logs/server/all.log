@@ -2657,3 +2657,14 @@ Error: read ECONNRESET
     at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Tue Jan 02 2024 16:03:54 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":333052},"process":{"argv":["node","C:\\Users\\Kirana N\\WORKSPACE\\FundooProject\\src\\index.js"],"cwd":"C:\\Users\\Kirana N\\WORKSPACE\\FundooProject","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18361428,"external":19999875,"heapTotal":106344448,"heapUsed":51443632,"rss":139001856},"pid":27388,"uid":null,"version":"v16.15.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2024-01-02T10:33:54.158Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-02T10:34:12.985Z"}
 info: Connected to the database. {"timestamp":"2024-01-02T10:34:13.007Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-03T05:40:57.680Z"}
+info: Connected to the database. {"timestamp":"2024-01-03T05:40:57.701Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-03T05:41:33.909Z"}
+info: Connected to the database. {"timestamp":"2024-01-03T05:41:33.928Z"}
+error: uncaughtException: read ECONNRESET
+Error: read ECONNRESET
+    at TCP.onStreamRead (node:internal/stream_base_commons:217:20) {"date":"Wed Jan 03 2024 11:13:59 GMT+0530 (India Standard Time)","error":{"code":"ECONNRESET","errno":-4077,"syscall":"read"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":5763},"process":{"argv":["node","C:\\Users\\Kirana N\\WORKSPACE\\FundooProject\\src\\index.js"],"cwd":"C:\\Users\\Kirana N\\WORKSPACE\\FundooProject","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":18379564,"external":20070820,"heapTotal":52604928,"heapUsed":48310000,"rss":86544384},"pid":28652,"uid":null,"version":"v16.15.0"},"stack":"Error: read ECONNRESET\n    at TCP.onStreamRead (node:internal/stream_base_commons:217:20)","timestamp":"2024-01-03T05:43:59.628Z","trace":[{"column":20,"file":"node:internal/stream_base_commons","function":"TCP.onStreamRead","line":217,"method":"onStreamRead","native":false}]}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-04T09:55:45.783Z"}
+info: Connected to the database. {"timestamp":"2024-01-04T09:55:45.801Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-04T09:57:00.189Z"}
+info: Connected to the database. {"timestamp":"2024-01-04T09:57:00.208Z"}

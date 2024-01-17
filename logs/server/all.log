@@ -2668,3 +2668,234 @@ info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-04T0
 info: Connected to the database. {"timestamp":"2024-01-04T09:55:45.801Z"}
 info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-04T09:57:00.189Z"}
 info: Connected to the database. {"timestamp":"2024-01-04T09:57:00.208Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T10:54:16.063Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T10:54:16.090Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T11:46:44.317Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T11:46:44.338Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T12:01:09.943Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T12:01:09.962Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T15:06:33.393Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T15:06:33.413Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T15:16:18.555Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T15:16:18.574Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-11T15:56:28.435Z"}
+info: Connected to the database. {"timestamp":"2024-01-11T15:56:28.457Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-15T05:22:21.354Z"}
+info: Connected to the database. {"timestamp":"2024-01-15T05:22:21.383Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-15T06:10:42.675Z"}
+info: Connected to the database. {"timestamp":"2024-01-15T06:10:42.692Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-15T06:12:05.868Z"}
+info: Connected to the database. {"timestamp":"2024-01-15T06:12:05.884Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-15T06:12:14.610Z"}
+info: Connected to the database. {"timestamp":"2024-01-15T06:12:14.626Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-15T06:52:05.411Z"}
+info: Connected to the database. {"timestamp":"2024-01-15T06:52:05.434Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T05:10:54.378Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T05:10:54.393Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T06:15:08.473Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T06:15:08.496Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T06:16:51.900Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T06:16:51.915Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T06:52:43.590Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T06:52:43.607Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T09:59:02.555Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T09:59:02.574Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:00:04.969Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:00:04.985Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:38:23.115Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:38:23.132Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:50:10.281Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:50:10.300Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:50:16.069Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:50:16.086Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:55:04.537Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:55:04.555Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:55:13.275Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:55:13.292Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:55:22.782Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:55:22.806Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:58:39.795Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:58:39.816Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T10:58:45.041Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T10:58:45.063Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/658ba85332f0631cbdf58fe8/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T10:59:16.877Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/658ba85332f0631cbdf58fe8/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T10:59:27.763Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/658a6985ff5aea4265dd97d8/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T10:59:54.580Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T11:18:22.245Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T11:18:22.263Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T15:34:02.347Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T15:34:02.367Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T15:35:00.003Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T15:35:00.021Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/65a6b252c65eb131e81613ac/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:44:05.443Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/65a6b252c65eb131e81613ac/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:44:37.430Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/65a6b252c65eb131e81613ac/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:44:50.569Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/65a6b252c65eb131e81613ac/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:45:22.416Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/65a6b252c65eb131e81613ac/trash 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:46:09.880Z"}
+error: 
+    status - 500 
+    message - SyntaxError: Unexpected token n in JSON at position 0
+    at JSON.parse (<anonymous>)
+    at createStrictSyntaxError (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:160:10)
+    at parse (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\types\json.js:83:15)
+    at C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\body-parser\lib\read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:202:9)
+    at invokeCallback (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:231:16)
+    at done (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:220:7)
+    at IncomingMessage.onEnd (C:\Users\Kirana N\WORKSPACE\FundooProject\node_modules\raw-body\index.js:280:7)
+    at IncomingMessage.emit (node:events:539:35)
+    at IncomingMessage.emit (node:domain:475:12)
+    at endReadableNT (node:internal/streams/readable:1345:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21) 
+    url - /api/v1/note/658d30d080095703e9284e48/archive 
+    method - PUT 
+    IP - ::1
+   {"timestamp":"2024-01-16T16:49:53.512Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T23:40:53.698Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T23:40:53.718Z"}
+info: Server started at http://localhost:3000/api/v1/ {"timestamp":"2024-01-16T23:41:22.825Z"}
+info: Connected to the database. {"timestamp":"2024-01-16T23:41:22.851Z"}

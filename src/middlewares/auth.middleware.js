@@ -21,7 +21,7 @@ export const userAuth= (req, res, next) => {
     const token_arr = token.split(" ");
 
     req.user = jwt.verify(token_arr.length>1?token_arr[1]:token_arr[0],process.env.LOGIN_SECRET_KEY);
-
+    
     // Proceed to the next middleware or route handler
     next();
   } catch (error) {

@@ -6,51 +6,6 @@
     "auditLog": "logs\\requests\\daily\\.66602cdde70fd43456e51d0c9addc83824638c4d-audit.json",
     "files": [
         {
-            "date": 1703203426573,
-            "name": "logs\\requests\\daily\\2023-12-22.log",
-            "hash": "e62deff3bcbdb475d487f1c1647a75c92588a4ebd14986343d8e3376d7f650b9"
-        },
-        {
-            "date": 1703474761481,
-            "name": "logs\\requests\\daily\\2023-12-25.log",
-            "hash": "8e5e9fd3c88d32d63d61b743c7197e230e469d1313031a1ca94a563ae71b0520"
-        },
-        {
-            "date": 1703562784430,
-            "name": "logs\\requests\\daily\\2023-12-26.log",
-            "hash": "2b5a63929c07ca6aa4fe1e8883b0585c478f54510f936571d7bd353a00245ccd"
-        },
-        {
-            "date": 1703650861381,
-            "name": "logs\\requests\\daily\\2023-12-27.log",
-            "hash": "5db10ead072e18f8170c6bf7009aec49c4e7536a692f6fd95fb7d9d0829186cc"
-        },
-        {
-            "date": 1703744473904,
-            "name": "logs\\requests\\daily\\2023-12-28.log",
-            "hash": "a8c8d278fd9c2ff878042ba7cdce8b166131258ee823ad3dbc67b4fc0a5ccc0c"
-        },
-        {
-            "date": 1703823711899,
-            "name": "logs\\requests\\daily\\2023-12-29.log",
-            "hash": "599dcd0d4eab305f063e6d3716222f514332187e4f3e2cb34889792e0d1e7cb9"
-        },
-        {
-            "date": 1703994065846,
-            "name": "logs\\requests\\daily\\2023-12-31.log",
-            "hash": "a25e8c860ff3999370a07c04ac2b99d833c6e8738e4b31ab1b49f83831b14a28"
-        },
-        {
-            "date": 1704114584137,
-            "name": "logs\\requests\\daily\\2024-01-01.log",
-            "hash": "e4c67706a6c1e65ade794b4e45899dea31335a8238fd4eb677754bee92f257cc"
-        },
-        {
-            "date": 1704171036154,
-            "name": "logs\\requests\\daily\\2024-01-02.log",
-            "hash": "2a1575ff51d49f8c6f34c8bacc0cff2e2f1eb758d6d2dd1db39b5b69167c125c"
-        },
-        {
             "date": 1704260457637,
             "name": "logs\\requests\\daily\\2024-01-03.log",
             "hash": "140793db0d2b96457864b5a2dd34d2f07e07022974710c8b42026e2f56489493"
@@ -59,6 +14,26 @@
             "date": 1704362145733,
             "name": "logs\\requests\\daily\\2024-01-04.log",
             "hash": "a2ece4342360dc147b067bd5770ef8d08b1b49babe842bce9ba45505af91e3c6"
+        },
+        {
+            "date": 1704970456009,
+            "name": "logs\\requests\\daily\\2024-01-11.log",
+            "hash": "b85231d2c60023279af63133dcb235a5b20d9336d52741764e5b0c44764dac56"
+        },
+        {
+            "date": 1705296141288,
+            "name": "logs\\requests\\daily\\2024-01-15.log",
+            "hash": "6f44160e2b9b89277f541f575d7f0297d0ca123b9d938fa95b5526ec6270614f"
+        },
+        {
+            "date": 1705381854331,
+            "name": "logs\\requests\\daily\\2024-01-16.log",
+            "hash": "e1363b3b6910a5f2c6595feba557f3a5da67ba02dce4e0a372cc712382fc7b67"
+        },
+        {
+            "date": 1705448453649,
+            "name": "logs\\requests\\daily\\2024-01-17.log",
+            "hash": "8fd336ab7a7438ca6e34bce9e2ac099001f539744acf4dcacfd516200b643e3f"
         }
     ],
     "hashType": "sha256"

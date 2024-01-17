@@ -22,7 +22,7 @@ export const login = async (req, res) => {
     const data = await UserService.login(req.body);
     res.status(HttpStatus.CREATED).json({
       code: HttpStatus.CREATED,
-      data:data,
+      token:data,
       message: 'User log in successful'
     });
   } catch (error) {
